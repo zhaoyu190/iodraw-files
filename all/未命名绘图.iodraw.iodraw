@@ -22,10 +22,86 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <mxCell id="PhBnsfKqhBuvdljs7Djb-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="PhBnsfKqhBuvdljs7Djb-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="580" y="285" as="sourcePoint" />
-          </mxGeometry>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-8" value="开始" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="90" width="320" height="702" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-9" value="│" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="26" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-10" value="├─ 设置 maxRetries = 5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="52" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-11" value="│" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="78" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-12" value="├─ [调用 checkCsrInSeconds(maxRetries)] " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="104" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-13" value="│  │" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="130" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-14" value="│  ├─ 成功？ → 返回 true" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="156" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-15" value="│  │" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="182" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-16" value="│  └─ 失败？ → 进入循环" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="208" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-17" value="│" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="234" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-18" value="├─ for循环 (x = 0 到 4):" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="260" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-19" value="│  │" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="286" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-20" value="│  ├─ 1. 执行 burnWVKeyFromUSB(false)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="312" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-21" value="│  │" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="338" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-22" value="│  ├─ 2. 打印日志 &quot;Start generating the CSR for the [x]&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="364" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-23" value="│  │" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="390" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-24" value="│  ├─ 3. [调用 checkCsrInSeconds(maxRetries)]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="416" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-25" value="│  │    │" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="442" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-26" value="│  │    ├─ 成功？ → 返回 true" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="468" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-27" value="│  │    │" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="494" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-28" value="│  │    └─ 失败？ → 继续循环" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="520" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-29" value="│  │" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="546" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-30" value="│  └─ 循环结束" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="572" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-31" value="│" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="598" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-32" value="├─ 打印错误日志 &quot;check Csr: Fail !!&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="624" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-33" value="│" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="650" width="320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PhBnsfKqhBuvdljs7Djb-34" value="└─ 返回 false" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="PhBnsfKqhBuvdljs7Djb-8">
+          <mxGeometry y="676" width="320" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
